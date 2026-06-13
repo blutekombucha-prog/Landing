@@ -27,10 +27,6 @@ export const metadata: Metadata = {
   title: 'BLÜTE Kombucha | Patagonia Argentina',
   description: 'Premium artisanal kombucha crafted in Neuquén, Patagonia. Experience the essence of Patagonian wilderness in every sip.',
   generator: 'v0.app',
-  icons: {
-    icon: '/Loguito.jpeg',
-    apple: '/Loguito.jpeg',
-  },
 }
 
 export default function RootLayout({
