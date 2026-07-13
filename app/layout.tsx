@@ -25,9 +25,22 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.blutekombucha.com.ar'),
   title: 'BLÜTE Kombucha | Patagonia Argentina',
-  description: 'Premium artisanal kombucha crafted in Neuquén, Patagonia. Experience the essence of Patagonian wilderness in every sip.',
-  generator: 'v0.app',
+  description: 'Kombucha de fermentación natural elaborada en Neuquén, Patagonia. Sabores únicos del sur argentino.',
+  openGraph: {
+    title: 'BLÜTE Kombucha | Patagonia Argentina',
+    description: 'Kombucha de fermentación natural elaborada en Neuquén, Patagonia.',
+    url: 'https://www.blutekombucha.com.ar',
+    siteName: 'BLÜTE Kombucha',
+    locale: 'es_AR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'BLÜTE Kombucha | Patagonia Argentina',
+    description: 'Kombucha de fermentación natural elaborada en Neuquén, Patagonia.',
+  },
 }
 
 export default function RootLayout({
