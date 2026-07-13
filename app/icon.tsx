@@ -30,9 +30,9 @@ export default async function Icon() {
       >
         <img
           src={logoSrc}
-          width={72}
-          height={90}
-          style={{ objectFit: 'cover', objectPosition: 'center' }}
+          width={64}
+          height={64}
+          style={{ objectFit: 'contain' }}
         />
       </div>
     ),
