@@ -41,6 +41,9 @@ export const metadata: Metadata = {
     title: 'BLÜTE Kombucha | Patagonia Argentina',
     description: 'Kombucha de fermentación natural elaborada en Neuquén, Patagonia.',
   },
+  verification: {
+    google: '7qpouASyzh1fKs_R3kDdL2tJnWmc1Hs7-h-PCTDtduQ',
+  },
 }
 
 export default function RootLayout({
