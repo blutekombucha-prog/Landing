@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
+import { blogPosts } from "@/lib/blog-posts";
 
 export default function BlogPage() {
   return (
@@ -28,26 +29,55 @@ export default function BlogPage() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="text-center mb-20 lg:mb-28"
+            className="mb-20 lg:mb-28"
           >
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6">
               Blog
             </p>
-            <h1 className="font-sans font-semibold text-4xl sm:text-5xl lg:text-6xl text-foreground max-w-3xl mx-auto text-balance leading-tight">
-              En construcción
+            <h1 className="font-sans font-semibold text-4xl sm:text-5xl lg:text-6xl text-foreground max-w-3xl text-balance leading-tight">
+              Notas de Blüte
             </h1>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="border-t border-border pt-16 text-center"
-          >
-            <p className="text-muted-foreground text-lg">
-              Próximamente — los primeros artículos están en camino.
-            </p>
-          </motion.div>
+          {blogPosts.length > 0 ? (
+            <div className="space-y-0">
+              {blogPosts.map((post, index) => (
+                <motion.article
+                  key={post.slug}
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="group flex flex-col gap-4 py-10 border-t border-border hover:border-foreground/30 transition-colors duration-300"
+                  >
+                    <h2 className="font-sans font-semibold text-2xl lg:text-3xl text-foreground group-hover:text-primary transition-colors">
+                      {post.title}
+                    </h2>
+                    <p className="text-muted-foreground leading-relaxed max-w-2xl">
+                      {post.excerpt}
+                    </p>
+                    <span className="inline-flex items-center gap-3 text-sm tracking-widest uppercase text-foreground group-hover:text-primary transition-colors">
+                      Leer nota
+                      <span className="w-8 h-px bg-current transition-all duration-300 group-hover:w-12" />
+                    </span>
+                  </Link>
+                </motion.article>
+              ))}
+            </div>
+          ) : (
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+              className="border-t border-border pt-16 text-center"
+            >
+              <p className="text-muted-foreground text-lg">
+                Próximamente — los primeros artículos están en camino.
+              </p>
+            </motion.div>
+          )}
         </div>
       </div>
     </main>
