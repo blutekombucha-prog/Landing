@@ -19,8 +19,14 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
               <ArrowLeft className="w-5 h-5" />
               <span className="text-sm tracking-widest uppercase">Volver</span>
             </Link>
-            <Link href="/" className="font-serif text-2xl lg:text-3xl tracking-wide text-foreground">
-              BLÜTE
+            <Link href="/" className="relative z-10">
+              <Image
+                src="/logosinbg.png"
+                alt="BLÜTE"
+                width={120}
+                height={40}
+                className="h-14 lg:h-16 w-auto object-contain"
+              />
             </Link>
             <div className="w-20" />
           </div>

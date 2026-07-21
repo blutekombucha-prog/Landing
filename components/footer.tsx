@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 const socialLinks = [
   { name: "Instagram", href: "https://instagram.com/blute.patagonia" },
@@ -17,9 +18,13 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-4">
             <Link href="/" className="inline-block mb-6">
-              <span className="font-serif text-3xl lg:text-4xl tracking-wide">
-                BLÜTE
-              </span>
+              <Image
+                src="/logo-blanco-cropped.png"
+                alt="BLÜTE"
+                width={140}
+                height={47}
+                className="h-12 lg:h-14 w-auto object-contain"
+              />
             </Link>
             <p className="text-background/60 leading-relaxed max-w-sm mb-8">
               Kombucha de fermentación natural desde el corazón de la Patagonia argentina.
