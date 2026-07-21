@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { blogPosts } from "@/lib/blog-posts";
@@ -50,18 +51,31 @@ export default function BlogPage() {
                 >
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="group flex flex-col gap-4 py-10 border-t border-border hover:border-foreground/30 transition-colors duration-300"
+                    className="group flex flex-col lg:flex-row lg:items-center gap-6 py-10 border-t border-border hover:border-foreground/30 transition-colors duration-300"
                   >
-                    <h2 className="font-sans font-semibold text-2xl lg:text-3xl text-foreground group-hover:text-primary transition-colors">
-                      {post.title}
-                    </h2>
-                    <p className="text-muted-foreground leading-relaxed max-w-2xl">
-                      {post.excerpt}
-                    </p>
-                    <span className="inline-flex items-center gap-3 text-sm tracking-widest uppercase text-foreground group-hover:text-primary transition-colors">
-                      Leer nota
-                      <span className="w-8 h-px bg-current transition-all duration-300 group-hover:w-12" />
-                    </span>
+                    {post.coverImage && (
+                      <div className="flex-shrink-0 w-full lg:w-40 aspect-square overflow-hidden rounded-md">
+                        <Image
+                          src={post.coverImage}
+                          alt={post.title}
+                          width={160}
+                          height={160}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    )}
+                    <div className="flex-1 flex flex-col gap-4">
+                      <h2 className="font-sans font-semibold text-2xl lg:text-3xl text-foreground group-hover:text-primary transition-colors">
+                        {post.title}
+                      </h2>
+                      <p className="text-muted-foreground leading-relaxed max-w-2xl">
+                        {post.excerpt}
+                      </p>
+                      <span className="inline-flex items-center gap-3 text-sm tracking-widest uppercase text-foreground group-hover:text-primary transition-colors">
+                        Leer nota
+                        <span className="w-8 h-px bg-current transition-all duration-300 group-hover:w-12" />
+                      </span>
+                    </div>
                   </Link>
                 </motion.article>
               ))}
