@@ -72,14 +72,13 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
                     className="my-4"
                   >
                     {block.src ? (
-                      <div className="relative w-full aspect-[16/10] overflow-hidden rounded-md">
-                        <Image
-                          src={block.src}
-                          alt={block.alt}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
+                      <Image
+                        src={block.src}
+                        alt={block.alt}
+                        width={block.width ?? 1200}
+                        height={block.height ?? 800}
+                        className="w-full h-auto rounded-md"
+                      />
                     ) : (
                       <div className="w-full aspect-[16/10] rounded-md border border-dashed border-border flex flex-col items-center justify-center gap-3 text-muted-foreground bg-muted/30">
                         <ImageOff className="w-6 h-6" />

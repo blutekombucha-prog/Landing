@@ -1,7 +1,7 @@
 export type BlogContentBlock =
   | { type: "paragraph"; text: string; linkText?: string; linkHref?: string }
   | { type: "heading"; text: string }
-  | { type: "image"; alt: string; src?: string };
+  | { type: "image"; alt: string; src?: string; width?: number; height?: number };
 
 export interface BlogPost {
   slug: string;
@@ -36,7 +36,13 @@ export const blogPosts: BlogPost[] = [
         type: "paragraph",
         text: "Hoy forma parte de la oferta habitual de cafeterías, restaurantes, tiendas de alimentos saludables y supermercados en países como Estados Unidos, Australia, Reino Unido, Alemania y Japón, mientras su consumo continúa expandiéndose en mercados emergentes, entre ellos Argentina.",
       },
-      { type: "image", alt: "Burbujas propias de la kombucha", src: "/blog1A.jpeg" },
+      {
+        type: "image",
+        alt: "Burbujas propias de la kombucha",
+        src: "/blog1A.jpeg",
+        width: 734,
+        height: 769,
+      },
       {
         type: "paragraph",
         text: "Este crecimiento refleja una tendencia más amplia: el interés de los consumidores por bebidas elaboradas mediante procesos naturales de fermentación y por propuestas que ofrecen nuevas experiencias de sabor.",
@@ -169,6 +175,8 @@ export const blogPosts: BlogPost[] = [
         type: "image",
         alt: "Kombucha servida en una copa de vino sobre un banco",
         src: "/blog1B.jpeg",
+        width: 733,
+        height: 768,
       },
       { type: "heading", text: "Blüte" },
       {
