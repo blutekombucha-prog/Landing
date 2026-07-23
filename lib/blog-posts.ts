@@ -10,6 +10,7 @@ export interface BlogPost {
   metaDescription: string;
   excerpt: string;
   coverImage?: string;
+  headerImage?: string;
   author: string;
   authorBio: string;
   content: BlogContentBlock[];
@@ -26,6 +27,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Descubrí qué es la kombucha, cómo se elabora, cuál es su origen y por qué esta bebida fermentada gana cada vez más lugar en la gastronomía.",
     coverImage: "/portadablog1.jpeg",
+    headerImage: "/portadablog.jpeg",
     author: "Mariano Cocco",
     authorBio:
       "Mariano Cocco es Licenciado en Comunicación Social, especialista en estrategia de contenidos y cofundador de Blüte. Desde hace más de cinco años trabaja en la industria del marketing, acompañando el desarrollo y posicionamiento de marcas. En Blüte combina esa experiencia con su pasión por la gastronomía, el deporte y la comunicación para impulsar una kombucha inspirada en la identidad de Neuquén y la Patagonia.",

@@ -35,6 +35,24 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
 
       <article className="pt-32 lg:pt-40 pb-24 lg:pb-32">
         <div className="max-w-3xl mx-auto px-6 lg:px-12">
+          {post.headerImage && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+              className="mb-10 lg:mb-12"
+            >
+              <Image
+                src={post.headerImage}
+                alt={post.title}
+                width={1200}
+                height={654}
+                className="w-full h-auto rounded-md"
+                priority
+              />
+            </motion.div>
+          )}
+
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
