@@ -76,31 +76,19 @@ export function FinalCTA() {
             <div className="space-y-8">
               <div className="space-y-2">
                 <div className="flex items-baseline gap-4">
-                  <span className="font-sans font-semibold text-4xl lg:text-5xl text-foreground">$24.000</span>
-                  <span className="text-muted-foreground">/ pack de 6</span>
-                </div>
-                <div className="flex items-baseline gap-4">
-                  <span className="font-sans font-semibold text-2xl lg:text-3xl text-foreground/70">$44.000</span>
+                  <span className="font-sans font-semibold text-4xl lg:text-5xl text-foreground">$48.000</span>
                   <span className="text-muted-foreground">/ pack de 12</span>
                 </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://instagram.com/blute.patagonia"
+                  href="https://ig.me/m/blute.patagonia"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-10 py-5 text-sm tracking-widest uppercase bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
                 >
-                  Pack de 6 - $24.000
-                </a>
-                <a
-                  href="https://instagram.com/blute.patagonia"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-10 py-5 text-sm tracking-widest uppercase border border-foreground/20 text-foreground hover:bg-foreground/5 transition-all duration-300"
-                >
-                  Pack de 12 - $44.000
+                  Pack de 12 - $48.000
                 </a>
               </div>
 
