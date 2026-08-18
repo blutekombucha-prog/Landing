@@ -74,6 +74,9 @@ export default function BlogPage() {
                       <h2 className="font-sans font-semibold text-2xl lg:text-3xl text-foreground group-hover:text-primary transition-colors">
                         {post.title}
                       </h2>
+                      <p className="text-sm font-semibold text-muted-foreground -mt-2">
+                        Por {post.author}
+                      </p>
                       <p className="text-muted-foreground leading-relaxed max-w-2xl">
                         {post.excerpt}
                       </p>
