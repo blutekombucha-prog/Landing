@@ -8,6 +8,17 @@ import { ArrowLeft } from "lucide-react";
 
 const notas = [
   {
+    id: 1,
+    title: "Una kombucha neuquina inspirada en la naturaleza",
+    excerpt:
+      "LM Neuquén presentó a BLÜTE, la kombucha creada por Mariano Cocco y Lucas Arens que llega como alternativa natural a las bebidas azucaradas, con sabores Manzana y Canela, Limón y Jengibre, y Frambuesa y Pimienta Rosa, en latas con una identidad visual inspirada en el art nouveau.",
+    date: "2026",
+    href: "https://www.lmneuquen.com/el-comedor/una-kombucha-neuquina-inspirada-la-naturaleza-n1249711",
+    category: "Digital",
+    media: "LM Neuquén",
+    image: "/LOGO LM.png",
+  },
+  {
     id: 0,
     title: "Kombucha con identidad patagónica",
     excerpt:
