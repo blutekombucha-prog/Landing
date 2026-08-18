@@ -1,5 +1,5 @@
 export type BlogContentBlock =
-  | { type: "paragraph"; text: string; linkText?: string; linkHref?: string }
+  | { type: "paragraph"; text: string; linkText?: string; linkHref?: string; boldText?: string; bold?: boolean }
   | { type: "heading"; text: string }
   | { type: "image"; alt: string; src?: string; width?: number; height?: number };
 
@@ -17,6 +17,147 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "cocteles-fermentados",
+    title: "Cócteles con fermentados: cuando la barra también transforma",
+    metaTitle: "Cócteles con fermentados: kombucha y coctelería | Blüte",
+    metaDescription:
+      "Descubrí cómo la kombucha, el kéfir y otros fermentados transforman la coctelería, aportando acidez, textura, aromas y nuevas posibilidades creativas.",
+    excerpt:
+      "Descubrí cómo la kombucha, el kéfir y otros fermentados transforman la coctelería, aportando acidez, textura, aromas y nuevas posibilidades creativas.",
+    coverImage: "/Cóctel con kombucha.jpeg",
+    author: "Alexander Martínez — Sardina Bar Café",
+    authorBio:
+      "**Alexander Martínez** es bartender desde 2017. Inició su carrera en **Boticario**, donde desarrolló gran parte de su identidad y forma de entender la coctelería. En 2018 obtuvo el primer puesto en una competencia de **Wild Turkey**, experiencia que lo llevó a viajar a Estados Unidos y que marcó un punto importante en su recorrido profesional. Durante sus años en Boticario también tuvo la oportunidad de conocer distintas escenas gastronómicas y de coctelería en **España, Francia, Inglaterra e Italia**, incorporando nuevas influencias y perspectivas a su trabajo. A fines de 2022 decidió emprender una nueva etapa: viajó a **Barcelona para formarse en pastelería**, y posteriormente pasó por Chile antes de continuar su carrera en **Nene Bar, en Bariloche**. Actualmente vive en **Mar del Plata**, donde junto a su familia creó **Sardina Bar Café**, un espacio que combina la esencia de un bar café clásico con una mirada contemporánea. En 2026 participó en **World Class Argentina**, alcanzando el **Top 8 nacional** y obteniendo el reconocimiento como **Mejor de Latinoamérica en el primer desafío** de la competencia. Su recorrido combina coctelería, gastronomía, viajes y formación, con una mirada que busca conectar técnicas, productos e historias detrás de cada servicio.",
+    content: [
+      {
+        type: "paragraph",
+        text: "Hay algo particular en trabajar con un fermentado detrás de una barra. No se trata solamente de incorporar un nuevo ingrediente a una receta. Se trata de trabajar con algo que está vivo, que cambia, que tiene su propio ritmo y que muchas veces obliga al bartender a dejar de buscar la perfección absoluta para empezar a observar, probar y entender.",
+      },
+      {
+        type: "image",
+        alt: "Cóctel con kombucha",
+        src: "/Cóctel con kombucha.jpeg",
+        width: 1200,
+        height: 800,
+      },
+      {
+        type: "paragraph",
+        text: "En los últimos años, la fermentación empezó a ocupar un lugar cada vez más interesante dentro de la gastronomía y también dentro de la coctelería. Kombuchas, kéfires, hidromieles, vinagres y lactofermentos dejaron de ser solamente productos asociados a una tendencia para convertirse en herramientas creativas.",
+      },
+      {
+        type: "paragraph",
+        text: "En un cóctel pueden aportar acidez, dulzor, aromas, textura, profundidad y carbonatación. Pero, sobre todo, aportan sabores diferentes, complejos y difíciles de conseguir de otra manera.",
+      },
+      {
+        type: "paragraph",
+        text: "Mi primer acercamiento profundo a este mundo fue hace varios años, mientras trabajaba en Boticario, un bar donde la experimentación era parte central de su identidad.",
+      },
+      {
+        type: "paragraph",
+        text: "Ahí empezamos a investigar la fermentación aplicada específicamente a la coctelería. La kombucha fue una de las primeras puertas de entrada.",
+        linkText: "kombucha",
+        linkHref: "/blog/que-es-la-kombucha",
+      },
+      {
+        type: "paragraph",
+        text: "Uno de los primeros trabajos que hicimos fue un kéfir de agua con una segunda fermentación de pera. Los resultados podían ser excelentes un día y completamente diferentes algunos días después. La acidez cambiaba, la carbonatación también y los aromas evolucionaban.",
+      },
+      {
+        type: "paragraph",
+        text: "Al principio, esa irregularidad podía resultar inquietante. Después entendimos que justamente ahí estaba una de las cosas más interesantes.",
+      },
+      {
+        type: "paragraph",
+        text: "Una bebida industrial busca que el producto de hoy sea igual al de mañana. Con un fermentado ocurre lo contrario: cambia con el tiempo y tenemos que aprender a entender esos cambios.",
+      },
+      {
+        type: "paragraph",
+        text: "Eso también cambia la manera de trabajar.",
+      },
+      {
+        type: "paragraph",
+        text: "Durante esa etapa hicimos kombuchas de diferentes perfiles, hidromieles, vinagres frutales, kéfires y distintas fermentaciones aplicadas a bebidas. También empezamos a mirar los ingredientes desde otro lugar.",
+      },
+      {
+        type: "paragraph",
+        text: "En una de las cartas de Boticario, por ejemplo, trabajamos bajo el concepto de desperdicio cero. Partes de frutas, vegetales y hierbas que normalmente hubieran terminado descartadas podían convertirse en cordiales, fermentos, vinagres o nuevos componentes para un cóctel.",
+      },
+      {
+        type: "paragraph",
+        text: "La fermentación aparecía entonces no solamente como una técnica para transformar un ingrediente, sino también como una manera de aprovecharlo mejor.",
+      },
+      {
+        type: "paragraph",
+        text: "Con el tiempo entendí que no existe una única manera de hacer un cóctel con fermentados.",
+      },
+      {
+        type: "paragraph",
+        text: "Una kombucha puede aportar burbujas y acidez en un Collins o un highball. Puede reemplazar parte de una bebida gasificada, acompañar un destilado o incluso convertirse en el eje de un cóctel sin alcohol.",
+      },
+      {
+        type: "paragraph",
+        text: "Pero la pregunta que más me interesa no es: ¿qué cóctel puedo hacer con kombucha?",
+        boldText: "¿qué cóctel puedo hacer con kombucha?",
+      },
+      {
+        type: "paragraph",
+        text: "Sino: ¿qué puede hacer la fermentación por un cóctel?",
+        boldText: "¿qué puede hacer la fermentación por un cóctel?",
+      },
+      {
+        type: "paragraph",
+        text: "Esa pregunta fue parte de mi aprendizaje en Boticario y sigue presente hoy, trabajando en Sardina Bar Café, en Mar del Plata.",
+      },
+      {
+        type: "image",
+        alt: "Sardina Bar y Café en Mar del Plata",
+        src: "/Sardina Bar y Café en Mar del Plata.jpeg",
+        width: 1200,
+        height: 800,
+      },
+      {
+        type: "paragraph",
+        text: "No necesariamente porque cada cóctel tenga que llevar un fermentado, sino porque aquella experiencia modificó mi manera de pensar la coctelería.",
+      },
+      {
+        type: "paragraph",
+        text: "Me enseñó a esperar. A probar. A aceptar que un producto puede cambiar. Y, sobre todo, a entender que detrás de un ingrediente hay un proceso que también puede formar parte del sabor final.",
+      },
+      {
+        type: "paragraph",
+        text: "Una kombucha puede ser ácida y dulce al mismo tiempo. Puede tener una carbonatación delicada y notas profundas provenientes de la fermentación. Un kéfir puede aportar acidez y textura. Un vinagre puede convertirse en una herramienta para estructurar una bebida. Una hidromiel puede sumar complejidad mucho más allá del azúcar.",
+      },
+      {
+        type: "paragraph",
+        text: "Eso amplía el vocabulario de una barra.",
+      },
+      {
+        type: "paragraph",
+        text: "Y quizás por eso los fermentados tienen tanto futuro en la coctelería. No son simplemente ingredientes que colocamos dentro de una receta. Son ingredientes con historia, proceso y evolución.",
+      },
+      {
+        type: "paragraph",
+        text: "El cóctel termina siendo, en cierta forma, el último capítulo de una fermentación que empezó mucho antes: en una botella, en un frasco o en un recipiente, a través de distintos procesos que transforman lentamente la materia.",
+      },
+      {
+        type: "paragraph",
+        text: "La barra, entonces, deja de ser solamente el lugar donde se mezclan bebidas.",
+      },
+      {
+        type: "paragraph",
+        text: "También puede ser un lugar donde las cosas siguen transformándose.",
+        bold: true,
+      },
+      {
+        type: "image",
+        alt: "Alexander Martínez dueño de Sardina Bar y Café",
+        src: "/Alexander Martínez dueño de Sardina Bar y Café.jpeg",
+        width: 1200,
+        height: 800,
+      },
+    ],
+  },
   {
     slug: "que-es-la-kombucha",
     title:

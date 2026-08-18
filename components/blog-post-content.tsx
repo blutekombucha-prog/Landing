@@ -6,6 +6,12 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ImageOff } from "lucide-react";
 import type { BlogPost } from "@/lib/blog-posts";
 
+function renderBoldMarkdown(text: string) {
+  return text.split(/\*\*(.+?)\*\*/g).map((part, i) =>
+    i % 2 === 1 ? <strong key={i}>{part}</strong> : part
+  );
+}
+
 export default function BlogPostContent({ post }: { post: BlogPost }) {
   return (
     <main className="min-h-screen bg-background">
@@ -65,7 +71,7 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
             <h1 className="font-sans font-semibold text-3xl sm:text-4xl lg:text-5xl text-foreground text-balance leading-tight mb-6">
               {post.title}
             </h1>
-            <p className="text-sm text-muted-foreground">Por {post.author}</p>
+            <p className="text-sm font-semibold text-muted-foreground">Por {post.author}</p>
           </motion.div>
 
           <div className="space-y-6">
@@ -128,8 +134,22 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
                 );
               }
 
+              if (block.boldText) {
+                const [before, after] = block.text.split(block.boldText);
+                return (
+                  <p key={index} className="text-muted-foreground leading-relaxed text-lg">
+                    {before}
+                    <strong>{block.boldText}</strong>
+                    {after}
+                  </p>
+                );
+              }
+
               return (
-                <p key={index} className="text-muted-foreground leading-relaxed text-lg">
+                <p
+                  key={index}
+                  className={`text-muted-foreground leading-relaxed text-lg${block.bold ? " font-semibold" : ""}`}
+                >
                   {block.text}
                 </p>
               );
@@ -146,7 +166,9 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">
               Sobre el autor
             </p>
-            <p className="text-muted-foreground leading-relaxed">{post.authorBio}</p>
+            <p className="text-muted-foreground leading-relaxed">
+              {renderBoldMarkdown(post.authorBio)}
+            </p>
           </motion.div>
         </div>
       </article>
