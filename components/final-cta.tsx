@@ -104,7 +104,7 @@ export function FinalCTA() {
               </div>
 
               <div className="pt-8 mt-8 border-t border-border">
-                <p className="text-sm text-muted-foreground mb-4">¿Tenés un local gastronómico?</p>
+                <p className="text-sm text-muted-foreground mb-4">¿Tenés un local comercial?</p>
                 <a
                   href="https://wa.me/542995248305?text=Hola!%20Quiero%20sumar%20Bl%C3%BCte%20a%20mi%20local"
                   target="_blank"
