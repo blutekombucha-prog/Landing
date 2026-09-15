@@ -18,6 +18,167 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ningun-cuerpo-se-salva-solo",
+    title: "Ningún cuerpo se salva solo",
+    metaTitle: "Kombucha: mucho más que una bebida | Blüte Kombucha",
+    metaDescription:
+      "Descubrí cómo la kombucha conecta fermentación, naturaleza, cultura y comunidad, en un recorrido por su historia y su lugar en el presente.",
+    excerpt:
+      "Descubrí cómo la kombucha conecta fermentación, naturaleza, cultura y comunidad, en un recorrido por su historia y su lugar en el presente.",
+    coverImage: "/portada3.jpeg",
+    headerImage: "/portada3.jpeg",
+    author: "Justo Aguilar",
+    authorBio:
+      "Justo Aguilar es, como todo el mundo, una colonia simbiótica: lo habitan la clínica médica, la psicoterapia, la fisiología y una biblioteca heredada de gente que ya no está. Su cepa madre se cultivó en el Hospital Británico de Buenos Aires; hoy sigue madurando en la MIND Foundation de Berlín. Su consulta, en Neuquén y Buenos Aires, trabaja con lo mismo que el frasco: terreno, tiempo, y la confianza de que el organismo sabe. Este texto es lo que esa colonia produce cuando se le ponen las condiciones y se la deja fermentar.",
+    content: [
+      {
+        type: "paragraph",
+        text: "En una cocina hay un frasco de vidrio con un líquido turbio y, flotando arriba, un disco pálido, gomoso, de aspecto un poco asqueroso. Quien no sabe qué es siente el impulso de tirarlo. Y si lo hiciera, sería responsable de algo similar al incendio de la biblioteca de Alejandría. Ese disco es un SCOBY: Symbiotic Culture Of Bacteria and Yeast, o en español, una colonia simbiótica de bacterias y levaduras. El nombre en inglés me parece más acorde, porque incluye la palabra cultura. Cultura es un conjunto de conocimientos, creencias, técnicas, costumbres y hábitos que un grupo aprende, comparte y transmite de una generación a la siguiente. No es algo que se transmita por herencia biológica, sino por contacto, de quien sabe a quien todavía no.",
+      },
+      {
+        type: "image",
+        alt: "Portada del blog Ningún cuerpo se salva solo",
+        src: "/portada3.jpeg",
+        width: 1280,
+        height: 882,
+      },
+      {
+        type: "paragraph",
+        text: "Un SCOBY hace precisamente eso. Cada disco que hoy fermenta fue parte de otro anterior, y ese de otro, en una sucesión que nadie llevó por escrito. Lo que viaja en esa gelatina no es un individuo, sino una comunidad entera con un reparto de tareas ya resuelto: qué levadura rompe el azúcar primero, qué bacteria toma lo que la levadura deja, en qué orden, a qué acidez. Es una técnica codificada en la composición del grupo. Y como toda cultura, se degrada si se la deja de practicar y se enriquece cuando circula.",
+      },
+      {
+        type: "paragraph",
+        text: "Cultivo y cultura vienen además del mismo verbo latino, colere, que significa a la vez trabajar la tierra y honrar a los dioses. Mucho antes de nombrar a los libros que leemos, la cultura era lo que se le hacía al suelo para que fuera fértil.",
+      },
+      {
+        type: "paragraph",
+        text: "Un frasco de kombucha es las dos cosas al mismo tiempo:",
+      },
+      {
+        type: "paragraph",
+        text: "— Una cultura, en el sentido de un saber que se hereda sin genes y sin papeles. Un saber antiguo y lento. Una o dos semanas de primera fermentación, unos días más de segunda. El azúcar tiene que ser comido, el ácido tiene que aparecer, el sabor tiene que asentarse, y ninguno de esos procesos acepta apuro. Se puede formular una gaseosa en una tarde y tenerla en góndola durante meses; una kombucha requiere que alguien espere, todos los días, mirando un frasco donde aparentemente no pasa nada. En una época que eliminó la espera, quien se toma su tiempo está haciendo algo más que una bebida. Algo así hoy es revolucionario por una razón muy simple: casi nadie puede (o quiere) permitírselo.",
+      },
+      {
+        type: "paragraph",
+        text: "— Un cultivo, en el mismo sentido en que se cultiva un campo: uno pone las condiciones —té, azúcar, temperatura, paciencia— y después se corre. La fermentación la hacen organismos que se coordinan entre ellos, producen su propio ácido y con ese ácido defienden el frasco de cualquier intruso. El resultado es siempre una co-creación: mitad intención humana, mitad voluntad ajena. El frasco no está a salvo por estar limpio; está a salvo por estar bien habitado.",
+      },
+      {
+        type: "paragraph",
+        text: "La medicina en la que me formé no comparte esta última idea. Hay una guerra contra los microorganismos y creemos estar ganándola. La antisepsia, los antibióticos, el agua potable y las vacunas componen probablemente el conjunto de ideas que más vidas salvó en la historia, y nadie que haya visto una sepsis va a relativizar estas implementaciones. El problema vino después de esas batallas ganadas. La guerra funcionó tan bien contra el patógeno que la metáfora se generalizó a todo lo demás: el mate que dejó de compartirse, niños a los que no se los deja ensuciarse, el antibiótico recetado por las dudas. De una victoria puntual hicimos una cosmovisión. Aprendimos a pensar la salud como ausencia de otros, y la limpieza dejó de ser una práctica para volverse una moral.",
+      },
+      {
+        type: "paragraph",
+        text: "Y toda moral empieza igual: trazando una línea y repartiendo a los que quedan de cada lado. De este lado nosotros; del otro ellos: los sucios, los que hay que eliminar. La pregunta es dónde pasa esa línea. Porque cuando uno mira el cuerpo de cerca, no pasa por la piel: le declaramos la guerra a la mitad de lo que somos.",
+      },
+      {
+        type: "paragraph",
+        text: "Contadas por unidades, las bacterias que llevamos encima superan a nuestras propias células. La cifra más cuidadosa da unos treinta y ocho billones de ellas contra unos treinta billones de las nuestras. Pesan poco —apenas doscientos gramos— y la desproporción entre número y peso se entiende recién cuando uno agranda las cosas.",
+      },
+      {
+        type: "paragraph",
+        text: "Agrandemos cuatro mil veces a una bacteria, hasta el tamaño de un grano de arroz. Un glóbulo rojo pasa a ser una ciruela; una célula del hígado, un pomelo; una célula de grasa, una pelota de fútbol. El óvulo, la única célula humana visible a ojo desnudo, una sandía. Una neurona motora, del tamaño de ese mismo pomelo, extiende un axón que a esa escala recorre cuatro kilómetros para llegar al dedo gordo del pie.",
+      },
+      {
+        type: "image",
+        alt: "Hojas",
+        src: "/hojas3.jpeg",
+        width: 1280,
+        height: 882,
+      },
+      {
+        type: "paragraph",
+        text: "Si volvemos a agrandar todo hasta que cada bacteria tenga el tamaño de una persona, podemos imaginar el aparato digestivo como un mapa argentino. El estómago y el intestino delgado alto son los campos de hielo: la acidez y el tránsito rápido no dejan que nadie se asiente, y se puede caminar horas sin ver un alma. Más abajo, en el íleon, empieza a haber pueblos, alguna ruta, un almacén cada tanto. En la boca hay una ciudad, con barrios tranquilos y conventillos. Y en el colon ninguna comparación alcanza: ni una plaza, ni una vereda, ni un metro libre entre un habitante y el siguiente.",
+      },
+      {
+        type: "paragraph",
+        text: "Y eso son solo las bacterias. También hay hongos, y arqueas, que no son ni una cosa ni la otra, sino un tercer dominio. Hay protistas, unicelulares complejos que la medicina trató como parásitos durante décadas y que hoy aparecen asociados a mejores perfiles metabólicos. Hay virus por billones, casi todos bacteriófagos: no nos infectan a nosotros, sino a nuestras bacterias, de modo que nuestros habitantes tienen a su vez habitantes. Y en los folículos de la cara de casi todos los adultos viven ácaros del género Demodex. Animales, con patas. No solo nos habitan microbios: tenemos nuestra propia fauna.",
+      },
+      {
+        type: "paragraph",
+        text: "Contra toda esa población fue la guerra. Y en un laboratorio, la ganamos.",
+      },
+      {
+        type: "paragraph",
+        text: "Criamos ratones sin un solo microorganismo encima. Cesárea estéril, aislador de presión positiva, aire filtrado, comida y agua irradiadas, manipulación con guantes que nunca tocaron el mundo exterior. De por vida. Se los llama germ-free, y son el sueño de la higiene absoluta, cumplido. Ni un patógeno, ni un comensal, ni una espora. Nadie.",
+      },
+      {
+        type: "paragraph",
+        text: "Y viven, incluso más que sus pares, porque nunca se infectan. La victoria parece completa.",
+      },
+      {
+        type: "paragraph",
+        text: "Pero hay que mirarlos en detalle. Necesitan un tercio más de comida para sostener el mismo peso, porque no tienen quién fermente lo que ellos no pueden. Las vitaminas que en cualquier otro animal fabrican bacterias, a ellos hay que dárselas aparte. El intestino les crece deforme. El sistema inmune es como un ejército que nunca aprendió a disparar y que, cuando finalmente enfrenta algo, no sabe distinguir entre lo propio y lo ajeno.",
+      },
+      {
+        type: "paragraph",
+        text: "Su respuesta al estrés está descalibrada: ante una amenaza liberan mucho más cortisol que un animal normal, y tardan más en volver a la calma. Y en conducta, un ratón germ-free no diferencia a un congénere de un objeto inanimado, no distingue a un conocido de alguien nuevo, se acicala de manera repetitiva y explora sin evaluar el riesgo.",
+      },
+      {
+        type: "paragraph",
+        text: "Ahí está el resultado de la guerra ganada: un animal completo en su anatomía, descalibrado en casi todos sus ajustes finos, y que ya no reconoce a otro de su especie.",
+      },
+      {
+        type: "image",
+        alt: "Nubes",
+        src: "/nubes3.jpeg",
+        width: 1280,
+        height: 882,
+      },
+      {
+        type: "paragraph",
+        text: "Muchas de estas desregulaciones se corrigen colonizando al animal con una sola especie de bacteria. Pero solamente si se lo hace temprano; pasada cierta edad, la misma bacteria ya no arregla nada. Hay una ventana, y después se cierra. Existen además cepas de ratón tímidas y cepas audaces, y esta diferencia históricamente se atribuye a la genética. Sin embargo, cuando se transfiere la microbiota de una cepa tímida a un animal germ-free de la cepa audaz, el receptor se vuelve tímido. Y al revés. El temperamento viaja en la materia fecal más que en los genes. Lo mismo pasa en mellizos humanos discordantes para obesidad —misma casa, casi misma genética, uno gordo y uno flaco—. Cuando se transfiere cada microbiota a ratones estériles, los ratones se empiezan a parecer a su donante.",
+      },
+      {
+        type: "paragraph",
+        text: "Entonces la pregunta, que yo no sé contestar y que ya hace unos años me incomoda: ¿cuánto de lo que llamo mi carácter es mío? Mi tolerancia al estrés, mi apetito, mi disposición a acercarme o a alejarme de otros, mis antojos, mi humor, mi energía, mi vitalidad, mi salud. Todo eso depende, en alguna proporción que nadie sabe medir, de una población que no elegí: me llegó del canal de parto, de la leche materna, de la casa y el patio, del barrio y del barro, de lo que comí a los tres años y de las veces que me dieron un antibiótico por las dudas. Ya no es una especulación de sobremesa ni misticismo.",
+      },
+      {
+        type: "paragraph",
+        text: "El primer alimento de nuestra vida lo grafica bien. Tiene tres componentes sólidos principales, y el tercero es una familia de más de doscientos azúcares complejos. El bebé no tiene ninguna enzima para digerirlos: pasan enteros por el intestino delgado y llegan al colon intactos. No están puestos ahí para \"el bebé\". Están puestos para algunas bacterias, entre ellas Bifidobacterium infantis, que carga un bloque de genes dedicado exclusivamente a comerlos. Una glándula mamaria y un microorganismo evolucionaron juntos hasta que el alimento de uno lo fabrica el otro.",
+      },
+      {
+        type: "paragraph",
+        text: "La reciprocidad va también en la otra dirección. Las células que recubren nuestro colon obtienen alrededor del setenta por ciento de su energía de un ácido graso que fabrican las bacterias fermentando lo que nosotros no podemos digerir. Nuestro genoma codifica muy pocas enzimas capaces de romper vegetales; el genoma colectivo de nuestros habitantes codifica varios miles. Les mandamos lo que no nos sirve y nos devuelven el combustible de nuestras propias células. Y lo mismo pasa con casi todo lo que consideramos humano: digestión, vitaminas, defensas, ánimo. Cada vez que la biología va a mirar de cerca una función de \"nuestro\" cuerpo, encuentra que en algún punto de la cadena trabaja alguien que no lleva nuestro genoma. Esa era la mitad a la que le declaramos la guerra.",
+      },
+      {
+        type: "paragraph",
+        text: "Nada de eso lo diseñamos nosotros. Lo que sí hicimos fue encontrarle un uso. Descubrimos que alterando a esa mitad se podía acelerar lo que la naturaleza hacía despacio, y para una cultura que no sabe esperar eso es un hallazgo, no un problema. En 1948, en un laboratorio norteamericano, unos investigadores que probaban suplementos vitamínicos en pollos usaron como fuente los residuos de una fermentación de antibióticos. Los pollos crecieron notablemente más rápido. El efecto era del antibiótico. En 1951 se autorizó su uso en el alimento del ganado, sin receta, y durante más de medio siglo se administraron dosis bajas y continuas a animales sanos con el objeto explícito de que engordaran en menos tiempo comiendo menos. Estados Unidos recién lo prohibió en 2017.",
+      },
+      {
+        type: "paragraph",
+        text: "El dato que cierra el argumento se conoce desde los años cincuenta: en animales germ-free, los antibióticos no promueven ningún crecimiento. Sin bacterias, no hay efecto. Sabíamos que alterar la microbiota temprana de un mamífero lo engorda —lo sabíamos tan bien que construimos una industria entera sobre eso— setenta años antes de empezar a preguntarnos qué le pasa a un chico que recibe cinco tandas de antibiótico antes de los dos años. Vale la pena preguntarse por qué ese chico necesitó recibirlos en primera instancia. ¿Es la infección una agresión de un enemigo dedicado a destruirnos? ¿O el resultado de un desequilibrio producido por nosotros mismos?",
+      },
+      {
+        type: "paragraph",
+        text: "Sabemos romper el ecosistema, entonces. Pero reponerlo es otra cosa, y ahí la medicina apenas balbucea. Existe un solo procedimiento que funciona de manera contundente: el trasplante de materia fecal. Cuando los antibióticos arrasaron con la microbiota del colon y el sobreviviente más agresivo ocupó el terreno vacío (C. difficile), el trasplante de un donante sano cura a alrededor del ochenta por ciento de los pacientes con una sola aplicación. El ensayo que lo demostró tuvo que suspenderse antes de tiempo porque era antiético seguir dándole el tratamiento estándar (más antibióticos) al grupo control. Es la primera terapia de la historia que no trasplanta un órgano ni administra una molécula: trasplanta un ecosistema. Funciona precisamente porque el antibiótico desequilibró el terreno y lo dejó (casi) vacío: ahí no hay comunidad que reemplazar, sino un desierto que repoblar. Los intentos de trasplantar salud metabólica de donantes delgados a personas con síndrome metabólico (sobrepeso, hipertensión arterial, diabetes), en cambio, dieron mejoras que se desvanecían en semanas. Y el motivo es menos técnico de lo que parece: lo que no se puede trasplantar son las condiciones, los hábitos. La persona recibe una colonia nueva y sigue viviendo como vivía. Con lo que ingiere cada día vuelve a seleccionar, sin proponérselo, a los mismos de antes.",
+      },
+      {
+        type: "image",
+        alt: "Flor",
+        src: "/flor3.jpeg",
+        width: 1280,
+        height: 882,
+      },
+      {
+        type: "paragraph",
+        text: "El trasplante es la versión hospitalaria de un movimiento mucho más viejo: mudar una comunidad viva de un lugar a otro. Eso la humanidad lo viene haciendo hace milenios. Fermentamos desde hace ocho mil años; las bacterias las descubrimos anteayer. Y hay algo hermoso en cómo esta tradición particular atravesó el tiempo: sin archivo. El origen de la kombucha se pierde en algún punto del Asia continental y ningún documento lo fija. Una práctica que se transmite entregando materia viva de mano en mano (o de recipiente en recipiente) no deja papeles. El disco que flota en los frascos de Blüte desciende físicamente, por división ininterrumpida, de otro disco anterior, y ese de otro, en una cadena que nadie escribió y que sin embargo llegó intacta hasta una cocina de Neuquén. Su archivo es el organismo. Es, en el sentido más literal de la palabra, cultura.",
+      },
+      {
+        type: "paragraph",
+        text: "Tagore escribió, discutiendo con Gandhi sobre si la India podía independizarse de Inglaterra mediante la separación y el cese de la cooperación: \"Ningún pueblo puede hallar su salud separándose de los otros. O salvarse juntos o desaparecer juntos.\" Hablaba de pueblos, y nosotros llevamos varios adentro.",
+      },
+      {
+        type: "paragraph",
+        text: "Y por si quedaba alguna duda sobre hasta dónde llega el asunto: aun sin nada vivo más que ellas, \"nuestras\" células no están solas. Cada una de ellas tiene cientos o miles de mitocondrias, que fueron bacterias libres hasta que hace dos mil millones de años entraron en una célula ancestral y se quedaron a vivir. Respiramos (entre otras cosas) gracias a ellas. No es que convivamos con bacterias: estamos hechos, en parte, de las que decidieron quedarse.",
+      },
+      {
+        type: "paragraph",
+        text: "Nada se salva solo. Ni un pueblo, ni un cuerpo, ni una bebida.",
+        bold: true,
+      },
+    ],
+  },
+  {
     slug: "cocteles-fermentados",
     title: "Cócteles con fermentados: cuando la barra también transforma",
     metaTitle: "Cócteles con fermentados: kombucha y coctelería | Blüte",
