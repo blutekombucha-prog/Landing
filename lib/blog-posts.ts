@@ -37,10 +37,10 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "image",
-        alt: "Portada del blog Ningún cuerpo se salva solo",
-        src: "/portada3.jpeg",
-        width: 1280,
-        height: 882,
+        alt: "Flor",
+        src: "/florr3.jpeg",
+        width: 1600,
+        height: 1067,
       },
       {
         type: "paragraph",
